@@ -1,0 +1,49 @@
+/* 头部部分 */
+header{height: 60px;}
+header>h1{margin:0 15px;float: left;text-align: center;line-height: 60px;}
+header>ul{width: 100%;}
+header>ul>li{position: relative;float: right;width: 160px;height:60px;text-align: center;line-height:60px ;}
+header>ul>li>a{display: block;font-size: 18px;font-weight: 900;color: purple}
+header>ul>li::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 21px;
+    width: 2px;
+    height: 18px;
+    background-color: blue;
+}
+header>ul>li:last-child::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+/* nav导航 */
+nav{width: 100%;height: 50px;background:linear-gradient(to right,#eee 0%,#020F29 50%,#eee 100%);}
+nav ul{width: 66%;display: flex;margin: 0 auto}
+nav ul li{flex: 1;text-align: center;line-height: 50px;}
+nav ul li a{display: block;color:#fff;font-size: 18px;}
+nav ul li:first-child{border-radius: 10px;background: cadetblue;}
+nav>ul>li>a:hover{border-radius: 10px;color: #fff;text-decoration: none;background: cadetblue;}
+/* lunbo */
+.pc_imgBox{
+    display: block;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* section部分 */
+section>h1{text-align: center;position: relative;}
+section>h1:after{ content: '';   width: 65%;   height: 2px;   position: absolute;   left: 210px;   bottom:-10px;background:linear-gradient(to right,red 0%,green 50%,blue);}
+section>.main{width: 100%;height: 100%;}
+section>.main>ul{width: 100%;height: 100%;}
+section>.main>ul>li{height: 200px;width: 260px;background:#eee;margin: 10px 20px;float: left;box-shadow: 0 6px 15px #ccc;overflow: hidden;}
+section>.main>ul>li>img{width: 260px;height: 80%;transition: all 0.8s;}
+section>.main>ul>li:hover img{transform: scale(1.06)}
+section>.main>ul>li>a{width: 260px;height: 20%;text-align: center;line-height: 40px;display: block;color: darkblue;font-size: 18px;font-weight: 900;}
+footer{  margin-top: 10px;width: 100%;height: 100px;background:linear-gradient(to right,#eee 0%,#ccc 50%,#eee 100%);padding: 30px 0;}
+footer>p{text-align: center;color: black;font-size: 18px;}
+footer>p:first-child{color: purple;}
